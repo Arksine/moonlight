@@ -1,0 +1,14 @@
+{
+    "moonraker": {
+        "repo_owner": "Arksine",
+        "repo_name": "moonraker",
+        "description": "API Host For Klipper",
+        "authorized_creators": ["Arksine"]
+    },
+    "klipper": {
+        "repo_owner": "Klipper3d",
+        "repo_name": "klipper",
+        "description": "A 3D Printer Firmware",
+        "authorized_creators": ["KevinOConnor"]
+    }
+}
