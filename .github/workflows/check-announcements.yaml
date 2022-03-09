@@ -1,0 +1,35 @@
+name: Check Announcements
+on:
+  schedule:
+    - cron: "0,30 * * * *"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Moonlight
+        uses: actions/checkout@v2
+
+      - name: Get Python
+        uses: actions/setup-python@v2
+        with: {python-version: '3.9'}
+
+      - name: Parse Issues
+        id: parse
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip install requests
+          OUTPUT=$(python ./src/update_rss.py)
+          echo ::set-output name=result::${OUTPUT}
+
+      - name: Commit Changes
+        if: ${{ steps.parse.outputs.result == 'commit' }}
+        uses: EndBug/add-and-commit@v8
+        with:
+          add: 'assets'
+          default_author: github_actions
+          committer_name: GitHub Actions
+          committer_email: github-actions[bot]@users.noreply.github.com
+          message: 'assets: automated xml feed update'
+          push: true
