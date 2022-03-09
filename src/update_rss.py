@@ -107,8 +107,6 @@ class RssDocument:
         other_root: Optional[etree.Element] = feed_info["root"]
         if other_root is None:
             return False
-        if self.etag != feed_info["etag"]:
-            return False
         if self.cfg_hash != feed_info["config_hash"]:
             return False
         cur_items = self.root.findall("channel/item")
