@@ -4,9 +4,9 @@
         <title>moonraker</title>
         <link>https://github.com/Arksine/moonraker</link>
         <description>API Host For Klipper</description>
-        <pubDate>Wed, 09 Mar 2022 18:11:35 GMT</pubDate>
+        <pubDate>Wed, 09 Mar 2022 18:40:56 GMT</pubDate>
         <moonlight:configHash>9f1408ad47ebfe0ca61b1f92db0db2eda89598e28ca9674ca5863c1e9a5ca195</moonlight:configHash>
-        <moonlight:etag>"5ba085170fc0690eb8f899c01ce9b8899936105f3c8f95d697506983ea1e6479"</moonlight:etag>
+        <moonlight:etag>"d15242094cf9ebf982eb1846114e4373447d8f1c7c234a21aab0b3317dd088fb"</moonlight:etag>
         <item>
             <title>PolicyKit warnings; unable to manage services, restart system, or update packages</title>
             <link>https://github.com/Arksine/moonraker/issues/349</link>

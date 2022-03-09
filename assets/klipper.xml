@@ -4,8 +4,8 @@
         <title>klipper</title>
         <link>https://github.com/Klipper3d/klipper</link>
         <description>A 3D Printer Firmware</description>
-        <pubDate>Wed, 09 Mar 2022 18:11:35 GMT</pubDate>
+        <pubDate>Wed, 09 Mar 2022 18:40:56 GMT</pubDate>
         <moonlight:configHash>b296baec1808adbcb38b698adfc04c04d57056788c45fa3079f19506d67c2498</moonlight:configHash>
-        <moonlight:etag>"2fb6b62a3c6d1be58445193779d7cc596e9204b85b4a20fc06ee4a80c70b878a"</moonlight:etag>
+        <moonlight:etag>"684fb9fbb78286d164e2d58df193013b19de697548fa8e1661ebd418a7e8c07f"</moonlight:etag>
     </channel>
 </rss>
