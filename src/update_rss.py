@@ -47,8 +47,7 @@ class RssDocument:
     def __init__(
         self, name: str,
         options: Dict[str, Any],
-        cfg_hash: str,
-        etag: Optional[str] = None
+        cfg_hash: str
     ) -> None:
         self.name = name
         self.repo = f"{options['repo_owner']}/{options['repo_name']}"
@@ -57,7 +56,6 @@ class RssDocument:
         ]
         self.date = datetime.datetime.now(datetime.timezone.utc)
         self.cfg_hash = cfg_hash
-        self.etag = etag
         self.root = etree.Element("rss", {"version": "2.0", "xmlns:moonlight": NS_URL})
         self.root.text = "\n    "
         self.channel = RssElement(self.root, "channel", is_last=True)
@@ -67,8 +65,6 @@ class RssDocument:
         date_str = email.utils.format_datetime(self.date, usegmt=True)
         RssElement(self.channel, "pubDate", date_str, level=2)
         RssElement(self.channel, "moonlight:configHash", self.cfg_hash, level=2)
-        if etag is not None:
-            RssElement(self.channel, "moonlight:etag", etag, level=2)
 
     def add_items_from_issues(self, issues: List[Dict[str, Any]]) -> None:
         for issue in issues:
@@ -110,7 +106,7 @@ class RssDocument:
         if self.cfg_hash != feed_info["config_hash"]:
             return False
         cur_items = self.root.findall("channel/item")
-        last_items = self.root.findall("channel/item")
+        last_items = other_root.findall("channel/item")
         if len(cur_items) != len(last_items):
             return False
         last_uid_map: Dict[str, etree.Element] = {
@@ -146,7 +142,6 @@ def hash_config(name: str, options: Dict[str, Any]) -> None:
 def get_feed_info(name: str) -> Dict[str, Any]:
     ret: Dict[str, Any] = {
         "root": None,
-        "etag": None,
         "config_hash": None,
         "last_pub": None
     }
@@ -154,9 +149,6 @@ def get_feed_info(name: str) -> Dict[str, Any]:
     if path.is_file():
         et = etree.parse(str(path))
         ret["root"] = et.getroot()
-        etag = et.findtext("channel/moonlight:etag",
-                           namespaces={"moonlight": NS_URL})
-        ret["etag"] = etag
         cfg_hash = et.findtext("channel/moonlight:configHash",
                                namespaces={"moonlight": NS_URL})
         ret["config_hash"] = cfg_hash
@@ -191,9 +183,6 @@ def main(token: Optional[str] = None) -> None:
         headers: Dict[str, str] = {"Accept": "application/vnd.github.v3+json"}
         if token is not None:
             headers["Authorization"] = f"token {token}"
-        must_refresh = cfg_hash != feed_info["config_hash"]
-        if feed_info["etag"] is not None and not must_refresh:
-            headers["If-None-Match"] = feed_info["etag"]
         resp = requests.get(url, headers=headers, timeout=2.0)
         if resp.status_code == 304:
             print(f"Not modified: {name}", file=sys.stderr)
@@ -201,12 +190,7 @@ def main(token: Optional[str] = None) -> None:
         elif resp.status_code != requests.codes.ok:
             print(f"Error fetching {name}", file=sys.stderr)
             continue
-        new_etag: Optional[str] = None
-        if "etag" in resp.headers:
-            new_etag: str = resp.headers["etag"]
-            if new_etag[:2] == "W/":
-                new_etag = new_etag[2:]
-        doc = RssDocument(name, options, cfg_hash, new_etag)
+        doc = RssDocument(name, options, cfg_hash)
         issues: List[Dict[str, Any]] = resp.json()
         doc.add_items_from_issues(issues)
         if not doc.equals(feed_info):
