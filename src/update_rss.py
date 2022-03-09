@@ -153,7 +153,7 @@ def get_feed_info(name: str) -> Dict[str, Any]:
     path = ASSETS_PATH.joinpath(f"{name}.xml")
     if path.is_file():
         et = etree.parse(str(path))
-        ret["tree"] = et.getroot()
+        ret["root"] = et.getroot()
         etag = et.findtext("channel/moonlight:etag",
                            namespaces={"moonlight": NS_URL})
         ret["etag"] = etag
