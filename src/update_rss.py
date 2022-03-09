@@ -216,6 +216,8 @@ def main(token: Optional[str] = None) -> None:
             doc.write()
     if need_commit:
         print("commit")
+    else:
+        print("skip")
 
 if __name__ == "__main__":
     main()
