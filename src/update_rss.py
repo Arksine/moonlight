@@ -12,7 +12,7 @@ import datetime
 import hashlib
 import email.utils
 import sys
-import requests
+import httpx
 import xml.etree.ElementTree as etree
 from typing import List, Dict, Any, Optional
 
@@ -183,11 +183,12 @@ def main(token: Optional[str] = None) -> None:
         headers: Dict[str, str] = {"Accept": "application/vnd.github.v3+json"}
         if token is not None:
             headers["Authorization"] = f"token {token}"
-        resp = requests.get(url, headers=headers, timeout=2.0)
+        with httpx.Client(http2=True) as client:
+            resp = client.get(url, headers=headers, timeout=2.0)
         if resp.status_code == 304:
             print(f"Not modified: {name}", file=sys.stderr)
             continue
-        elif resp.status_code != requests.codes.ok:
+        elif resp.status_code != httpx.codes.OK:
             print(f"Error fetching {name}", file=sys.stderr)
             continue
         doc = RssDocument(name, options, cfg_hash)
