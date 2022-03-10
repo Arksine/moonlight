@@ -18,6 +18,7 @@ from typing import List, Dict, Any, Optional
 
 GH_HOST = "https://api.github.com"
 PARENT_DIR = pathlib.Path(__file__).parent
+REQ_CACHE = PARENT_DIR.parent.joinpath("cache/request_cache.json")
 ASSETS_PATH = PARENT_DIR.parent.joinpath("assets")
 CFG_PATH = PARENT_DIR.joinpath("config.json")
 NS_URL = "https://arksine.github.io/moonlight"
@@ -161,17 +162,34 @@ def get_feed_info(name: str) -> Dict[str, Any]:
                 pass
     return ret
 
+def read_cache() -> Dict[str, Any]:
+    if not REQ_CACHE.is_file():
+        return {}
+    print("Cache File Found", file=sys.stderr)
+    return json.loads(REQ_CACHE.read_text())
+
+def write_cache(data: Dict[str, Any]) -> None:
+    if not REQ_CACHE.parent.exists():
+        REQ_CACHE.parent.mkdir()
+    print("Writing Cache", file=sys.stderr)
+    REQ_CACHE.write_text(json.dumps(data))
+
 def read_config() -> Dict[str, Dict[str, Any]]:
     with CFG_PATH.open() as f:
         return json.load(f)
 
 def main(token: Optional[str] = None) -> None:
     token = token or os.getenv('GITHUB_TOKEN', None)
+    cache = read_cache()
+    new_cache: Dict[str, Any] = {}
     config = read_config()
     need_commit = False
     for name, options in config.items():
+        repo_cache = cache.get(name, {})
+        new_cache[name] = dict(repo_cache)
         # Get information about the last feed
         cfg_hash = hash_config(name, options)
+        new_cache[name]["config_hash"] = cfg_hash
         feed_info = get_feed_info(name)
         # query issues for each repo, creating xml files.  If
         # a current xml file exists and its contents are the
@@ -183,6 +201,9 @@ def main(token: Optional[str] = None) -> None:
         headers: Dict[str, str] = {"Accept": "application/vnd.github.v3+json"}
         if token is not None:
             headers["Authorization"] = f"token {token}"
+        etag = repo_cache.get("etag")
+        if etag is not None:
+            headers["If-None-Match"] = etag
         with httpx.Client(http2=True) as client:
             resp = client.get(url, headers=headers, timeout=2.0)
         if resp.status_code == 304:
@@ -191,12 +212,16 @@ def main(token: Optional[str] = None) -> None:
         elif resp.status_code != httpx.codes.OK:
             print(f"Error fetching {name}", file=sys.stderr)
             continue
+        if "etag" in resp.headers:
+            new_cache[name]["etag"] = resp.headers["etag"]
         doc = RssDocument(name, options, cfg_hash)
         issues: List[Dict[str, Any]] = resp.json()
         doc.add_items_from_issues(issues)
         if not doc.equals(feed_info):
             need_commit = True
             doc.write()
+    if new_cache != cache:
+        write_cache(new_cache)
     if need_commit:
         print("commit")
     else:
