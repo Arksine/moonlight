@@ -18,7 +18,8 @@ jobs:
         uses: actions/cache@v2
         with:
           path: cache
-          key: cache-${{ hashFiles('cache/request-cache.json') }}
+          key: cache-run-${{ github.run_id }}
+          restore-keys: cache-run-
 
       - name: Parse Issues
         id: parse
