@@ -18,7 +18,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: cache
-          key: cache-${{ hashFiles(cache/request-cache.json) }}
+          key: cache-${{ hashFiles('cache/request-cache.json') }}
 
       - name: Parse Issues
         id: parse
