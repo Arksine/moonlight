@@ -14,12 +14,18 @@ jobs:
         uses: actions/setup-python@v2
         with: {python-version: '3.9'}
 
+      - name: Cache Etags
+        uses: actions/cache@v2
+        with:
+          path: cache
+          key: cache-${{ hashFiles(cache/request-cache.json) }}
+
       - name: Parse Issues
         id: parse
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install requests
+          pip install httpx[http2]
           OUTPUT=$(python ./src/update_rss.py)
           echo ::set-output name=result::${OUTPUT}
 
