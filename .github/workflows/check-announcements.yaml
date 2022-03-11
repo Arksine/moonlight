@@ -2,6 +2,13 @@ name: Check Announcements
 on:
   schedule:
     - cron: "0,30 * * * *"
+  workflow_dispatch:
+    inputs:
+      force-update:
+        description: "force update all feeds"
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   run:
@@ -18,6 +25,7 @@ jobs:
         id: parse
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_UPDATE: ${{ github.event.inputs.force-update }}
         run: |
           pip install httpx[http2]
           OUTPUT=$(python ./src/update_rss.py)
