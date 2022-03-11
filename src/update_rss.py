@@ -60,7 +60,7 @@ class RssDocument:
         self.root = etree.Element("rss", {"version": "2.0", "xmlns:moonlight": NS_URL})
         self.root.text = "\n    "
         self.channel = RssElement(self.root, "channel", is_last=True)
-        RssElement(self.channel, "title", name, level=2)
+        RssElement(self.channel, "title", self.repo.lower(), level=2)
         RssElement(self.channel, "link", f"https://github.com/{self.repo}", level=2)
         RssElement(self.channel, "description", options["description"], level=2)
         date_str = email.utils.format_datetime(self.date, usegmt=True)
