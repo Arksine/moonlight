@@ -180,6 +180,9 @@ def read_config() -> Dict[str, Dict[str, Any]]:
 
 def main(token: Optional[str] = None) -> None:
     token = token or os.getenv('GITHUB_TOKEN', None)
+    force = os.getenv("FORCE_UPDATE", "false").lower() == "true"
+    if force:
+        print("Force Update Enabled", file=sys.stderr)
     cache = read_cache()
     new_cache: Dict[str, Any] = {}
     config = read_config()
@@ -217,7 +220,7 @@ def main(token: Optional[str] = None) -> None:
         doc = RssDocument(name, options, cfg_hash)
         issues: List[Dict[str, Any]] = resp.json()
         doc.add_items_from_issues(issues)
-        if not doc.equals(feed_info):
+        if not doc.equals(feed_info) or force:
             need_commit = True
             doc.write()
     if new_cache != cache:
