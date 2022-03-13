@@ -12,6 +12,7 @@ import datetime
 import hashlib
 import email.utils
 import sys
+import logging
 import httpx
 import xml.etree.ElementTree as etree
 from typing import List, Dict, Any, Optional
@@ -23,6 +24,7 @@ ASSETS_PATH = PARENT_DIR.parent.joinpath("assets")
 CFG_PATH = PARENT_DIR.joinpath("config.json")
 NS_URL = "https://arksine.github.io/moonlight"
 
+logging.basicConfig(stream=sys.stderr, level=logging.INFO)
 etree.register_namespace("moonlight", NS_URL)
 
 def RssElement(
@@ -165,13 +167,13 @@ def get_feed_info(name: str) -> Dict[str, Any]:
 def read_cache() -> Dict[str, Any]:
     if not REQ_CACHE.is_file():
         return {}
-    print("Cache File Found", file=sys.stderr)
+    logging.info("Cache File Found")
     return json.loads(REQ_CACHE.read_text())
 
 def write_cache(data: Dict[str, Any]) -> None:
     if not REQ_CACHE.parent.exists():
         REQ_CACHE.parent.mkdir()
-    print("Writing Cache", file=sys.stderr)
+    logging.info("Writing Cache")
     REQ_CACHE.write_text(json.dumps(data))
 
 def read_config() -> Dict[str, Dict[str, Any]]:
@@ -180,9 +182,11 @@ def read_config() -> Dict[str, Dict[str, Any]]:
 
 def main(token: Optional[str] = None) -> None:
     token = token or os.getenv('GITHUB_TOKEN', None)
+    if token is not None:
+        logging.info("Github Token Detected")
     force = os.getenv("FORCE_UPDATE", "false").lower() == "true"
     if force:
-        print("Force Update Enabled", file=sys.stderr)
+        logging.info("Force Update Enabled")
     cache = read_cache()
     new_cache: Dict[str, Any] = {}
     config = read_config()
@@ -210,10 +214,10 @@ def main(token: Optional[str] = None) -> None:
         with httpx.Client(http2=True) as client:
             resp = client.get(url, headers=headers, timeout=2.0)
         if resp.status_code == 304:
-            print(f"Not modified: {name}", file=sys.stderr)
+            logging.info(f"Not modified: {name}")
             continue
         elif resp.status_code != httpx.codes.OK:
-            print(f"Error fetching {name}", file=sys.stderr)
+            logging.info(f"Error fetching {name}")
             continue
         if "etag" in resp.headers:
             new_cache[name]["etag"] = resp.headers["etag"]
