@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:moonlight="https://arksine.github.io/moonlight">
+    <channel>
+        <title>arksine/moonlight</title>
+        <link>https://github.com/Arksine/moonlight</link>
+        <description>RSS Announcements for Moonraker</description>
+        <pubDate>Sun, 13 Mar 2022 21:01:50 GMT</pubDate>
+        <moonlight:configHash>f2912192bf0d09cf18d8b8af22b2d3501627043e5afa3ebff0e45e4794937901</moonlight:configHash>
+        <item>
+            <title>Announcement Test One</title>
+            <link>https://github.com/Arksine/moonlight/issues/1</link>
+            <description>This is the description.  Anything here should appear in the announcement, up to 512 characters.</description>
+            <pubDate>Wed, 09 Mar 2022 19:37:58 GMT</pubDate>
+            <category>normal</category>
+            <guid>arksine/moonlight/issue/1</guid>
+        </item>
+    </channel>
+</rss>
