@@ -4,8 +4,16 @@
         <title>arksine/moonlight</title>
         <link>https://github.com/Arksine/moonlight</link>
         <description>RSS Announcements for Moonraker</description>
-        <pubDate>Sun, 13 Mar 2022 21:01:50 GMT</pubDate>
+        <pubDate>Mon, 14 Mar 2022 12:15:58 GMT</pubDate>
         <moonlight:configHash>f2912192bf0d09cf18d8b8af22b2d3501627043e5afa3ebff0e45e4794937901</moonlight:configHash>
+        <item>
+            <title>Announcement Test Two</title>
+            <link>https://github.com/Arksine/moonlight/issues/2</link>
+            <description>This is a high priority announcement. This line is included in the description.</description>
+            <pubDate>Wed, 09 Mar 2022 19:52:59 GMT</pubDate>
+            <category>high</category>
+            <guid>arksine/moonlight/issue/2</guid>
+        </item>
         <item>
             <title>Announcement Test One</title>
             <link>https://github.com/Arksine/moonlight/issues/1</link>
