@@ -10,11 +10,5 @@
         "repo_name": "klipper",
         "description": "A 3D Printer Firmware",
         "authorized_creators": ["KevinOConnor"]
-    },
-    "moonlight": {
-        "repo_owner": "Arksine",
-        "repo_name": "moonlight",
-        "description": "RSS Announcements for Moonraker",
-        "authorized_creators": ["Arksine"]
     }
 }
