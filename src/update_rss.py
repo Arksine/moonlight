@@ -10,6 +10,7 @@ import pathlib
 import json
 import datetime
 import hashlib
+import argparse
 import email.utils
 import sys
 import logging
@@ -180,14 +181,16 @@ def read_config() -> Dict[str, Dict[str, Any]]:
     with CFG_PATH.open() as f:
         return json.load(f)
 
-def main(token: Optional[str] = None) -> None:
+def main(token: Optional[str] = None, enable_cache=False) -> None:
     token = token or os.getenv('GITHUB_TOKEN', None)
     if token is not None:
         logging.info("Github Token Detected")
     force = os.getenv("FORCE_UPDATE", "false").lower() == "true"
     if force:
         logging.info("Force Update Enabled")
-    cache = read_cache()
+    cache: Dict[str, Any] = {}
+    if enable_cache:
+        cache = read_cache()
     new_cache: Dict[str, Any] = {}
     config = read_config()
     need_commit = False
@@ -227,7 +230,7 @@ def main(token: Optional[str] = None) -> None:
         if not doc.equals(feed_info) or force:
             need_commit = True
             doc.write()
-    if new_cache != cache:
+    if new_cache != cache and enable_cache:
         write_cache(new_cache)
     if need_commit:
         print("commit")
@@ -235,4 +238,14 @@ def main(token: Optional[str] = None) -> None:
         print("skip")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(
+        description="Moonlight - RSS Feed Generator")
+    parser.add_argument(
+        "-t", "--token", default=None, metavar="<token>",
+        help="GitHub Authentication Token")
+    parser.add_argument(
+        "-c", "--cache", action="store_true",
+        help="Enable Etag Cache"
+    )
+    args = parser.parse_args()
+    main(args.token, args.cache)
