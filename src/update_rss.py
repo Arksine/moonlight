@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # Build RSS feeds from GitHub issues
 #
 # Copyright (C) 2022  Eric Callahan <arksine.code@gmail.com>
