@@ -165,6 +165,18 @@ def get_feed_info(name: str) -> Dict[str, Any]:
                 pass
     return ret
 
+def get_rate_limit(headers: httpx.Headers) -> Dict[str, Any]:
+    if 'X-Ratelimit-Limit' in headers:
+        reset_time = float(headers['X-Ratelimit-Reset'])
+        dt = datetime.datetime.fromtimestamp(reset_time)
+        return {
+            "limit": int(headers['X-Ratelimit-Limit']),
+            "remaining": int(headers['X-Ratelimit-Remaining']),
+            "reset": dt.ctime()
+        }
+    return {}
+
+
 def read_cache() -> Dict[str, Any]:
     if not REQ_CACHE.is_file():
         return {}
@@ -194,6 +206,7 @@ def main(token: Optional[str] = None, enable_cache=False) -> None:
     new_cache: Dict[str, Any] = {}
     config = read_config()
     need_commit = False
+    rate_limit: Dict[str, Any] = {}
     for name, options in config.items():
         repo_cache = cache.get(name, {})
         new_cache[name] = dict(repo_cache)
@@ -216,6 +229,7 @@ def main(token: Optional[str] = None, enable_cache=False) -> None:
             headers["If-None-Match"] = etag
         with httpx.Client(http2=True) as client:
             resp = client.get(url, headers=headers, timeout=2.0)
+        rate_limit.update(get_rate_limit(resp.headers))
         if resp.status_code == 304:
             logging.info(f"Not modified: {name}")
             continue
@@ -230,6 +244,13 @@ def main(token: Optional[str] = None, enable_cache=False) -> None:
         if not doc.equals(feed_info) or force:
             need_commit = True
             doc.write()
+    if rate_limit:
+        logging.info(
+            "GitHub Rate Limit:\n"
+            f"Current Limit: {rate_limit['limit']}\n"
+            f"Remaining: {rate_limit['remaining']}\n"
+            f"Reset Time: {rate_limit['reset']}\n"
+        )
     if new_cache != cache and enable_cache:
         write_cache(new_cache)
     if need_commit:
