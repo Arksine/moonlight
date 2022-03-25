@@ -63,7 +63,7 @@ for an explanation for each field:
 The `project_name` is the name that will be assigned to your feed, generally
 this will match the `repo_name`, but it isn't a requirement.
 
-Once your repo is registered you should create `announcement` and `crtical`
+Once your repo is registered you should create `announcement` and `critical`
 labels in your repo.  When an authorized GitHub user creates an issue
 tagged with `announcement` it will be eligible for Moonlight's issue parser
 and added to your projects announcement feed. Issues tagged with both the
