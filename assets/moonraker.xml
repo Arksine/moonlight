@@ -4,8 +4,16 @@
         <title>arksine/moonraker</title>
         <link>https://github.com/Arksine/moonraker</link>
         <description>API Host For Klipper</description>
-        <pubDate>Fri, 11 Mar 2022 12:01:57 GMT</pubDate>
+        <pubDate>Mon, 04 Apr 2022 16:56:18 GMT</pubDate>
         <moonlight:configHash>9f1408ad47ebfe0ca61b1f92db0db2eda89598e28ca9674ca5863c1e9a5ca195</moonlight:configHash>
+        <item>
+            <title>Changes to the Update Manager</title>
+            <link>https://github.com/Arksine/moonraker/issues/410</link>
+            <description>I recently pushed some changes to the update manager that users and developers should be aware of.  The primary points of concern are as follows:</description>
+            <pubDate>Mon, 04 Apr 2022 16:47:50 GMT</pubDate>
+            <category>normal</category>
+            <guid>arksine/moonraker/issue/410</guid>
+        </item>
         <item>
             <title>PolicyKit warnings; unable to manage services, restart system, or update packages</title>
             <link>https://github.com/Arksine/moonraker/issues/349</link>
