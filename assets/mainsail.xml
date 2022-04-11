@@ -4,23 +4,7 @@
         <title>mainsail-crew/mainsail</title>
         <link>https://github.com/mainsail-crew/mainsail</link>
         <description>Webinterface For Klipper</description>
-        <pubDate>Sat, 26 Mar 2022 16:12:15 GMT</pubDate>
+        <pubDate>Mon, 11 Apr 2022 15:11:08 GMT</pubDate>
         <moonlight:configHash>4df99c1f1fca717ae8d023eda7457022dba411e6aec71c9371f024de93100002</moonlight:configHash>
-        <item>
-            <title>Imporant Test Announcement</title>
-            <link>https://github.com/mainsail-crew/mainsail/issues/736</link>
-            <description>This issue is only a test issue for the moonraker announcement component.</description>
-            <pubDate>Sat, 26 Mar 2022 15:49:02 GMT</pubDate>
-            <category>high</category>
-            <guid>mainsail-crew/mainsail/issue/736</guid>
-        </item>
-        <item>
-            <title>Test Announcement</title>
-            <link>https://github.com/mainsail-crew/mainsail/issues/735</link>
-            <description>This issue is only a test issue for the moonraker announcement component.</description>
-            <pubDate>Sat, 26 Mar 2022 15:42:00 GMT</pubDate>
-            <category>normal</category>
-            <guid>mainsail-crew/mainsail/issue/735</guid>
-        </item>
     </channel>
 </rss>
