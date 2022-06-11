@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:moonlight="https://arksine.github.io/moonlight">
+    <channel>
+        <title>nlef/moonraker-telegram-bot</title>
+        <link>https://github.com/nlef/moonraker-telegram-bot</link>
+        <description>Telegram bot to interact with Moonraker</description>
+        <pubDate>Sat, 11 Jun 2022 18:11:06 GMT</pubDate>
+        <moonlight:configHash>f3e34bf779fd0481ffdf26ad8571373c3aba4b2bc2c0186c44aab33c73b01490</moonlight:configHash>
+        <item>
+            <title>Dump running config to log file after restart</title>
+            <link>https://github.com/nlef/moonraker-telegram-bot/issues/152</link>
+            <description>### What would you like to see added?</description>
+            <pubDate>Sat, 14 May 2022 13:44:29 GMT</pubDate>
+            <category>normal</category>
+            <guid>nlef/moonraker-telegram-bot/issue/152</guid>
+        </item>
+    </channel>
+</rss>
