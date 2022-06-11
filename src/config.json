@@ -16,5 +16,11 @@
         "repo_name": "mainsail",
         "description": "Webinterface For Klipper",
         "authorized_creators": ["lixxbox", "meteyou"]
+    },
+    "moonraker-telegram-bot": {
+        "repo_owner": "nlef",
+        "repo_name": "moonraker-telegram-bot",
+        "description": "Telegram bot to interact with Moonraker",
+        "authorized_creators": ["aka13-404", "nlef"]
     }
 }
