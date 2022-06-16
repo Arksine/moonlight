@@ -22,5 +22,11 @@
         "repo_name": "moonraker-telegram-bot",
         "description": "Telegram bot to interact with Moonraker",
         "authorized_creators": ["aka13-404", "nlef"]
+    },
+    "fluidd": {
+        "repo_owner": "fluidd-core",
+        "repo_name": "fluidd",
+        "description": "Fluidd, the klipper UI.",
+        "authorized_creators": ["cadriel", "eduncan911", "matmen", "pecirep", "pedrolamas"]
     }
 }
