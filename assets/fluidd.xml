@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:moonlight="https://arksine.github.io/moonlight">
+    <channel>
+        <title>fluidd-core/fluidd</title>
+        <link>https://github.com/fluidd-core/fluidd</link>
+        <description>Fluidd, the klipper UI.</description>
+        <pubDate>Thu, 16 Jun 2022 19:07:32 GMT</pubDate>
+        <moonlight:configHash>56cd687af01ca17fae75886c10e5740274c2ee284cb6f4cb4d2645a5a18da31e</moonlight:configHash>
+    </channel>
+</rss>
