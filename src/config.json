@@ -28,5 +28,11 @@
         "repo_name": "fluidd",
         "description": "Fluidd, the klipper UI.",
         "authorized_creators": ["cadriel", "eduncan911", "matmen", "pecirep", "pedrolamas"]
+    },
+    "mobileraker": {
+        "repo_owner": "Clon1998",
+        "repo_name": "mobileraker",
+        "description": "A iOS and Android mobile app for Klipper.",
+        "authorized_creators": ["Clon1998"]
     }
 }
