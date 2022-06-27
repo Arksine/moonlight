@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:moonlight="https://arksine.github.io/moonlight">
+    <channel>
+        <title>clon1998/mobileraker</title>
+        <link>https://github.com/Clon1998/mobileraker</link>
+        <description>A iOS and Android mobile app for Klipper.</description>
+        <pubDate>Mon, 27 Jun 2022 18:14:19 GMT</pubDate>
+        <moonlight:configHash>23827be32f8f7357fa0a0de25f0e7132e70f65ab64e7c209442692b3277ab9cc</moonlight:configHash>
+    </channel>
+</rss>
