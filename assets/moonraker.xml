@@ -4,23 +4,15 @@
         <title>arksine/moonraker</title>
         <link>https://github.com/Arksine/moonraker</link>
         <description>API Host For Klipper</description>
-        <pubDate>Mon, 04 Apr 2022 16:56:18 GMT</pubDate>
+        <pubDate>Wed, 27 Jul 2022 12:23:42 GMT</pubDate>
         <moonlight:configHash>9f1408ad47ebfe0ca61b1f92db0db2eda89598e28ca9674ca5863c1e9a5ca195</moonlight:configHash>
         <item>
-            <title>Changes to the Update Manager</title>
-            <link>https://github.com/Arksine/moonraker/issues/410</link>
-            <description>I recently pushed some changes to the update manager that users and developers should be aware of.  The primary points of concern are as follows:</description>
-            <pubDate>Mon, 04 Apr 2022 16:47:50 GMT</pubDate>
+            <title>Changes to include behavior</title>
+            <link>https://github.com/Arksine/moonraker/issues/473</link>
+            <description>The behavior of Moonraker's include directives has changed.  Include directives are now parsed in place as if the included file were copied into its parent.  This is how Klipper and other applications handle include directives.</description>
+            <pubDate>Wed, 27 Jul 2022 11:56:10 GMT</pubDate>
             <category>normal</category>
-            <guid>arksine/moonraker/issue/410</guid>
-        </item>
-        <item>
-            <title>PolicyKit warnings; unable to manage services, restart system, or update packages</title>
-            <link>https://github.com/Arksine/moonraker/issues/349</link>
-            <description>This announcement is an effort to get ahead of a coming change that will certainly result in issues.  PR #346  has been merged, and with it are some changes to Moonraker's default behavior.</description>
-            <pubDate>Fri, 28 Jan 2022 17:53:26 GMT</pubDate>
-            <category>normal</category>
-            <guid>arksine/moonraker/issue/349</guid>
+            <guid>arksine/moonraker/issue/473</guid>
         </item>
     </channel>
 </rss>
