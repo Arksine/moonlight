@@ -4,8 +4,16 @@
         <title>arksine/moonraker</title>
         <link>https://github.com/Arksine/moonraker</link>
         <description>API Host For Klipper</description>
-        <pubDate>Wed, 27 Jul 2022 12:23:42 GMT</pubDate>
+        <pubDate>Mon, 03 Oct 2022 10:47:05 GMT</pubDate>
         <moonlight:configHash>9f1408ad47ebfe0ca61b1f92db0db2eda89598e28ca9674ca5863c1e9a5ca195</moonlight:configHash>
+        <item>
+            <title>Folder/Path configuration change</title>
+            <link>https://github.com/Arksine/moonraker/issues/516</link>
+            <description>An upcoming addition to Moonraker will change how files and folders are configured and managed in Moonraker.  All folders and files managed by Moonraker will be contained within a `data path` configured in the command line.  Options such as `config_path` and `log_path`, `secrets_path`, etc. will be deprecated.</description>
+            <pubDate>Mon, 03 Oct 2022 10:35:36 GMT</pubDate>
+            <category>high</category>
+            <guid>arksine/moonraker/issue/516</guid>
+        </item>
         <item>
             <title>Changes to include behavior</title>
             <link>https://github.com/Arksine/moonraker/issues/473</link>
