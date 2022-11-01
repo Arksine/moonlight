@@ -4,15 +4,7 @@
         <title>arksine/moonraker</title>
         <link>https://github.com/Arksine/moonraker</link>
         <description>API Host For Klipper</description>
-        <pubDate>Sat, 15 Oct 2022 20:43:42 GMT</pubDate>
+        <pubDate>Tue, 01 Nov 2022 09:44:44 GMT</pubDate>
         <moonlight:configHash>9f1408ad47ebfe0ca61b1f92db0db2eda89598e28ca9674ca5863c1e9a5ca195</moonlight:configHash>
-        <item>
-            <title>Folder/Path configuration change</title>
-            <link>https://github.com/Arksine/moonraker/issues/516</link>
-            <description>### UPDATE 10/15/2022:</description>
-            <pubDate>Mon, 03 Oct 2022 10:35:36 GMT</pubDate>
-            <category>high</category>
-            <guid>arksine/moonraker/issue/516</guid>
-        </item>
     </channel>
 </rss>
