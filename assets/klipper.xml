@@ -4,7 +4,15 @@
         <title>klipper3d/klipper</title>
         <link>https://github.com/Klipper3d/klipper</link>
         <description>A 3D Printer Firmware</description>
-        <pubDate>Fri, 11 Mar 2022 12:01:57 GMT</pubDate>
+        <pubDate>Thu, 12 Jan 2023 23:09:59 GMT</pubDate>
         <moonlight:configHash>b296baec1808adbcb38b698adfc04c04d57056788c45fa3079f19506d67c2498</moonlight:configHash>
+        <item>
+            <title>Klipper changes to [bed_mesh] module</title>
+            <link>https://github.com/Klipper3d/klipper/issues/5983</link>
+            <description>In an upcoming change to Klipper, the default `bed_mesh` configuration will no longer be automatically loaded at startup. If you are using a `bed_mesh` configuration today then it is recommended to add an explicit `BED_MESH_PROFILE LOAD=default` command to your START_PRINT macro (or equivalent print start commands in your slicer). This change to Klipper is planned for February 1st 2023.</description>
+            <pubDate>Thu, 12 Jan 2023 22:41:22 GMT</pubDate>
+            <category>normal</category>
+            <guid>klipper3d/klipper/issue/5983</guid>
+        </item>
     </channel>
 </rss>
