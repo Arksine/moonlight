@@ -34,5 +34,11 @@
         "repo_name": "mobileraker",
         "description": "A iOS and Android mobile app for Klipper.",
         "authorized_creators": ["Clon1998"]
+    },
+    "RatOS": {
+        "repo_owner": "Rat-OS",
+        "repo_name": "RatOS",
+        "description": "An OS focusing on making klipper more approachable",
+        "authorized_creators": ["miklschmidt"]
     }
 }
