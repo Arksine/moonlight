@@ -38,7 +38,7 @@
     "RatOS": {
         "repo_owner": "Rat-OS",
         "repo_name": "RatOS",
-        "description": "Configurator for Klipper and RatOS",
+        "description": "An OS focusing on making klipper more approachable",
         "authorized_creators": ["miklschmidt"]
     }
 }
