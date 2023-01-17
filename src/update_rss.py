@@ -149,7 +149,7 @@ def get_feed_info(name: str) -> Dict[str, Any]:
         "config_hash": None,
         "last_pub": None
     }
-    path = ASSETS_PATH.joinpath(f"{name}.xml")
+    path = ASSETS_PATH.joinpath(f"{name.lower()}.xml")
     if path.is_file():
         et = etree.parse(str(path))
         ret["root"] = et.getroot()
