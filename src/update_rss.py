@@ -132,7 +132,7 @@ class RssDocument:
 
     def write(self):
         tree = etree.ElementTree(self.root)
-        path = ASSETS_PATH.joinpath(f"{self.name}.xml")
+        path = ASSETS_PATH.joinpath(f"{self.name.lower()}.xml")
         tree.write(path, encoding="utf-8", xml_declaration=True)
 
 def hash_config(name: str, options: Dict[str, Any]) -> None:
