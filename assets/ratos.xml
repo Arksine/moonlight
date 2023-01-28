@@ -4,7 +4,15 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Sat, 21 Jan 2023 00:48:59 GMT</pubDate>
+        <pubDate>Sat, 28 Jan 2023 17:07:52 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
+        <item>
+            <title>RatOS v2.0.0 BETA 1 is now available!</title>
+            <link>https://github.com/Rat-OS/RatOS/issues/53</link>
+            <description>We have now reached beta! Go to https://github.com/Rat-OS/RatOS/releases/tag/v2.0.0-beta1 to download the beta release and flash it to your Pi's SD card. You cannot upgrade from alpha to beta without reflashing. </description>
+            <pubDate>Sat, 28 Jan 2023 16:48:33 GMT</pubDate>
+            <category>normal</category>
+            <guid>rat-os/ratos/issue/53</guid>
+        </item>
     </channel>
 </rss>
