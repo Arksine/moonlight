@@ -40,5 +40,11 @@
         "repo_name": "RatOS",
         "description": "An OS focusing on making klipper more approachable",
         "authorized_creators": ["miklschmidt"]
+    },
+    "octoeverywhere": {
+        "repo_owner": "QuinnDamerell",
+        "repo_name": "OctoPrint-OctoEverywhere",
+        "description": "Empowering the worldwide maker community with free, private, and secure remote access, AI powered print failure detection, 3rd party app support, real-time notifications, live streaming, and more!",
+        "authorized_creators": ["QuinnDamerell"]
     }
 }
