@@ -4,15 +4,15 @@
         <title>quinndamerell/octoprint-octoeverywhere</title>
         <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere</link>
         <description>Empowering the worldwide maker community with free, private, and secure remote access, AI powered print failure detection, 3rd party app support, real-time notifications, live streaming, and more!</description>
-        <pubDate>Sat, 04 Feb 2023 21:33:14 GMT</pubDate>
+        <pubDate>Sat, 04 Feb 2023 22:07:56 GMT</pubDate>
         <moonlight:configHash>bc6bf17a66626436218e5274ad76e4e63b3247a9da9e1c1b4d4d049fe383f704</moonlight:configHash>
         <item>
-            <title>Test Announcement 2</title>
-            <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere/issues/32</link>
-            <description>This is also just a test, so if you see it, say hello!</description>
-            <pubDate>Sat, 04 Feb 2023 21:09:53 GMT</pubDate>
-            <category>normal</category>
-            <guid>quinndamerell/octoprint-octoeverywhere/issue/32</guid>
+            <title>Test High Pri</title>
+            <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere/issues/33</link>
+            <description>Test **with** _formatting_ and a [link](https://octoeverywhere.com)!</description>
+            <pubDate>Sat, 04 Feb 2023 21:36:05 GMT</pubDate>
+            <category>high</category>
+            <guid>quinndamerell/octoprint-octoeverywhere/issue/33</guid>
         </item>
     </channel>
 </rss>
