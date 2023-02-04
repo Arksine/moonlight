@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:moonlight="https://arksine.github.io/moonlight">
+    <channel>
+        <title>quinndamerell/octoprint-octoeverywhere</title>
+        <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere</link>
+        <description>Empowering the worldwide maker community with free, private, and secure remote access, AI powered print failure detection, 3rd party app support, real-time notifications, live streaming, and more!</description>
+        <pubDate>Sat, 04 Feb 2023 00:46:56 GMT</pubDate>
+        <moonlight:configHash>bc6bf17a66626436218e5274ad76e4e63b3247a9da9e1c1b4d4d049fe383f704</moonlight:configHash>
+    </channel>
+</rss>
