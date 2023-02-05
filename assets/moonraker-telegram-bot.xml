@@ -4,15 +4,7 @@
         <title>nlef/moonraker-telegram-bot</title>
         <link>https://github.com/nlef/moonraker-telegram-bot</link>
         <description>Telegram bot to interact with Moonraker</description>
-        <pubDate>Sat, 10 Sep 2022 21:38:24 GMT</pubDate>
+        <pubDate>Sun, 05 Feb 2023 12:50:00 GMT</pubDate>
         <moonlight:configHash>f3e34bf779fd0481ffdf26ad8571373c3aba4b2bc2c0186c44aab33c73b01490</moonlight:configHash>
-        <item>
-            <title>Status message rework, Secrets, QoL fixes</title>
-            <link>https://github.com/nlef/moonraker-telegram-bot/issues/196</link>
-            <description>This update breaks the config (sorry). Please check out the release notes if you plan updating. https://github.com/nlef/moonraker-telegram-bot/releases/tag/v1.4.5</description>
-            <pubDate>Sat, 10 Sep 2022 21:32:41 GMT</pubDate>
-            <category>normal</category>
-            <guid>nlef/moonraker-telegram-bot/issue/196</guid>
-        </item>
     </channel>
 </rss>
