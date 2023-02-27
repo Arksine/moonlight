@@ -4,15 +4,7 @@
         <title>quinndamerell/octoprint-octoeverywhere</title>
         <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere</link>
         <description>Empowering the worldwide maker community with free, private, and secure remote access, AI powered print failure detection, 3rd party app support, real-time notifications, live streaming, and more!</description>
-        <pubDate>Wed, 22 Feb 2023 02:17:39 GMT</pubDate>
+        <pubDate>Mon, 27 Feb 2023 23:09:56 GMT</pubDate>
         <moonlight:configHash>bc6bf17a66626436218e5274ad76e4e63b3247a9da9e1c1b4d4d049fe383f704</moonlight:configHash>
-        <item>
-            <title>OctoEverywhere - First Layer Complete Notification Improvments</title>
-            <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere/issues/35</link>
-            <description>Today I'm excited to announce major fixes and updates to the "first layer complete" notification. This notification has been problematic in the past due to the plugin not knowing the exact layer height. While it still doesn't know the exact layer, the new system I put in place should be much more accurate, and thus it will fire the notification at the correct time!</description>
-            <pubDate>Wed, 22 Feb 2023 00:43:35 GMT</pubDate>
-            <category>normal</category>
-            <guid>quinndamerell/octoprint-octoeverywhere/issue/35</guid>
-        </item>
     </channel>
 </rss>
