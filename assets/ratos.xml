@@ -4,15 +4,7 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Tue, 14 Feb 2023 00:52:30 GMT</pubDate>
+        <pubDate>Fri, 03 Mar 2023 04:18:34 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
-        <item>
-            <title>WARNING: BED_MESH behavior is changing in RatOS v2.0</title>
-            <link>https://github.com/Rat-OS/RatOS/issues/59</link>
-            <description>WARNING: the bed_mesh behavior will change when you update RatOS through mainsail. Read more about the new behavior here: https://rat-os.vercel.app/docs/configuration/macros#bed-mesh-calibration</description>
-            <pubDate>Mon, 13 Feb 2023 23:54:41 GMT</pubDate>
-            <category>high</category>
-            <guid>rat-os/ratos/issue/59</guid>
-        </item>
     </channel>
 </rss>
