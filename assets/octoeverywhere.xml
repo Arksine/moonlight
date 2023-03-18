@@ -4,7 +4,15 @@
         <title>quinndamerell/octoprint-octoeverywhere</title>
         <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere</link>
         <description>Empowering the worldwide maker community with free, private, and secure remote access, AI powered print failure detection, 3rd party app support, real-time notifications, live streaming, and more!</description>
-        <pubDate>Mon, 27 Feb 2023 23:09:56 GMT</pubDate>
+        <pubDate>Sat, 18 Mar 2023 05:33:04 GMT</pubDate>
         <moonlight:configHash>bc6bf17a66626436218e5274ad76e4e63b3247a9da9e1c1b4d4d049fe383f704</moonlight:configHash>
+        <item>
+            <title>OctoEverywhere - Multi Printer Support!</title>
+            <link>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere/issues/37</link>
+            <description>Big news... with version 2.4.0, our plug-in now supports remote access for multiple Klipper/Moonraker instances running on the same device!</description>
+            <pubDate>Sat, 18 Mar 2023 05:13:25 GMT</pubDate>
+            <category>normal</category>
+            <guid>quinndamerell/octoprint-octoeverywhere/issue/37</guid>
+        </item>
     </channel>
 </rss>
