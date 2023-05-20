@@ -4,8 +4,16 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Fri, 19 May 2023 02:01:22 GMT</pubDate>
+        <pubDate>Sat, 20 May 2023 14:07:59 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
+        <item>
+            <title>Adaptive Mesh: issues should now be solved.</title>
+            <link>https://github.com/Rat-OS/RatOS/issues/89</link>
+            <description>The issues with BLTouch, Beacon and inverted adaptive prime z_offset issues should now be solved. If you're using adaptive mesh i recommend you refresh the update manager and update RatOS to the latest version.</description>
+            <pubDate>Sat, 20 May 2023 13:33:39 GMT</pubDate>
+            <category>normal</category>
+            <guid>rat-os/ratos/issue/89</guid>
+        </item>
         <item>
             <title>Beacon support and native adaptive meshing has landed in RatOS</title>
             <link>https://github.com/Rat-OS/RatOS/issues/88</link>
