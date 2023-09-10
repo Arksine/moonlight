@@ -4,23 +4,7 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Tue, 23 May 2023 00:46:26 GMT</pubDate>
+        <pubDate>Sun, 10 Sep 2023 00:40:52 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
-        <item>
-            <title>Crowsnest v4 breaking changes!</title>
-            <link>https://github.com/Rat-OS/RatOS/issues/90</link>
-            <description>Crowsnest v4 is here, and it comes with breaking changes which unfortunately requires a manual reinstall of crowsnest itself. If your webcamera doesn't work after updating, this is why. For instructions on how to update, read the blog post here: http://os.ratrig.com/blog/crowsnest-v4-breaking-changes-manual-upgrade</description>
-            <pubDate>Mon, 22 May 2023 23:54:45 GMT</pubDate>
-            <category>high</category>
-            <guid>rat-os/ratos/issue/90</guid>
-        </item>
-        <item>
-            <title>Beacon support and native adaptive meshing has landed in RatOS</title>
-            <link>https://github.com/Rat-OS/RatOS/issues/88</link>
-            <description>When you update RatOS in the machine tab RatOS v2 will have full native support for Beacon (single include) and Adaptive Meshing &amp; Priming (see: https://os.ratrig.com/docs/configuration/adaptive-meshing).</description>
-            <pubDate>Fri, 19 May 2023 01:30:05 GMT</pubDate>
-            <category>normal</category>
-            <guid>rat-os/ratos/issue/88</guid>
-        </item>
     </channel>
 </rss>
