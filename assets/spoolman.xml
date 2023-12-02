@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:moonlight="https://arksine.github.io/moonlight">
+    <channel>
+        <title>donkie/spoolman</title>
+        <link>https://github.com/Donkie/Spoolman</link>
+        <description>Keep track of your inventory of 3D-printer filament spools.</description>
+        <pubDate>Sat, 02 Dec 2023 12:14:30 GMT</pubDate>
+        <moonlight:configHash>ee0bdb507c3348263559f2fa567517d6860eba494ece5256d931ace9166858d7</moonlight:configHash>
+    </channel>
+</rss>
