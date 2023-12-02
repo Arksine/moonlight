@@ -46,5 +46,11 @@
         "repo_name": "OctoPrint-OctoEverywhere",
         "description": "Empowering the worldwide maker community with free, private, and secure remote access, AI powered print failure detection, 3rd party app support, real-time notifications, live streaming, and more!",
         "authorized_creators": ["QuinnDamerell"]
+    },
+    "spoolman": {
+        "repo_owner": "Donkie",
+        "repo_name": "Spoolman",
+        "description": "Keep track of your inventory of 3D-printer filament spools.",
+        "authorized_creators": ["Donkie"]
     }
 }
