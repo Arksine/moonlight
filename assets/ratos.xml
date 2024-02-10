@@ -4,15 +4,7 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Sat, 02 Dec 2023 21:07:09 GMT</pubDate>
+        <pubDate>Sat, 10 Feb 2024 00:38:23 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
-        <item>
-            <title>Octopus Max EZ users headsup!</title>
-            <link>https://github.com/Rat-OS/RatOS/issues/110</link>
-            <description>The pin for the heater was wrong in the merged pull request, the wiring diagram in the documentation is correct, so if you have adapted your wiring to fit the configuration (ie, you're using HE3 instead of HE0), be aware that when you update the RatOS configuration you'll either have to override `[extruder]` with `heater_pin: PF7`, or move your heater physically to the port pictured in the wiring diagram on https://os.ratrig.com/docs/boards/btt/octopus-max-ez</description>
-            <pubDate>Sat, 02 Dec 2023 20:49:18 GMT</pubDate>
-            <category>normal</category>
-            <guid>rat-os/ratos/issue/110</guid>
-        </item>
     </channel>
 </rss>
