@@ -4,7 +4,15 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Sat, 10 Feb 2024 00:38:23 GMT</pubDate>
+        <pubDate>Thu, 14 Mar 2024 15:09:04 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
+        <item>
+            <title>PSA: accel_to_decel will change to minimum_cruise_ratio</title>
+            <link>https://github.com/Rat-OS/RatOS/issues/121</link>
+            <description>Klipper just merged a changed that removes accel_to_decel in favor of minimum_cruise_ratio. RatOS has adapted the minimum_cruise_ratio, so if you have overrides setting max_accel_to_decel you may get an error when updating, in that case change accel_to_decel to minimum_cruise_ratio. This also means that if you update RatOS you need to update klipper as well.</description>
+            <pubDate>Thu, 14 Mar 2024 14:48:02 GMT</pubDate>
+            <category>normal</category>
+            <guid>rat-os/ratos/issue/121</guid>
+        </item>
     </channel>
 </rss>
