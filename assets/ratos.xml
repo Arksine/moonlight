@@ -4,7 +4,15 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Fri, 31 May 2024 22:32:58 GMT</pubDate>
+        <pubDate>Sat, 01 Jun 2024 01:57:23 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
+        <item>
+            <title>PSA: RatOS already has Beacon installed and will flash it automatically, don't install it again.</title>
+            <link>https://github.com/Rat-OS/RatOS/issues/127</link>
+            <description>With the release of Beacon TrueZero, a lot of people are running the beacon install scripts on their setups. This is not necessary and breaks the existing beacon installation (as the beacon docs guides you to install it in a different directory, so you end up with 2 copies fighting eachother). All you need to do is make sure your beacon is plugged in, then update RatOS and Beacon through the mainsail machine tab, and RatOS will flash your beacon automatically.</description>
+            <pubDate>Sat, 01 Jun 2024 00:50:31 GMT</pubDate>
+            <category>normal</category>
+            <guid>rat-os/ratos/issue/127</guid>
+        </item>
     </channel>
 </rss>
