@@ -54,9 +54,9 @@
         "authorized_creators": ["Donkie"]
     },
     "FreeDi": {
-        "repo_owner": "C0co",
+        "repo_owner": "Phil1988",
         "repo_name": "FreeDi",
         "description": "An open OS + display firmware for QIDI 3D printers",
-        "authorized_creators": ["C0co"]
+        "authorized_creators": ["Phil1988"]
     }
 }
