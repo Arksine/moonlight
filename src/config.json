@@ -52,5 +52,11 @@
         "repo_name": "Spoolman",
         "description": "Keep track of your inventory of 3D-printer filament spools.",
         "authorized_creators": ["Donkie"]
+    },
+    "FreeDi": {
+        "repo_owner": "C0co",
+        "repo_name": "FreeDi",
+        "description": "An open OS + display firmware for QIDI 3D printers",
+        "authorized_creators": ["C0co"]
     }
 }
