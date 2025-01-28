@@ -4,7 +4,36 @@
         <title>phil1988/freedi</title>
         <link>https://github.com/Phil1988/FreeDi</link>
         <description>An open OS + display firmware for QIDI 3D printers</description>
-        <pubDate>Fri, 24 Jan 2025 20:11:44 GMT</pubDate>
+        <pubDate>Tue, 28 Jan 2025 03:12:57 GMT</pubDate>
         <moonlight:configHash>7c64bfb0d231ecc800cd2ad0d7efd76725951c7011969e82f3b8aa011279c1fa</moonlight:configHash>
+        <item>
+            <title>Test</title>
+            <link>https://github.com/Phil1988/FreeDi/issues/122</link>
+            <description>123123</description>
+            <pubDate>Tue, 28 Jan 2025 02:56:43 GMT</pubDate>
+            <category>high</category>
+            <guid>phil1988/freedi/issue/122</guid>
+        </item>
+        <item>
+            <title>[Announcement] Temporary reduced availability</title>
+            <link>https://github.com/Phil1988/FreeDi/issues/105</link>
+            <description>To all the **FreeDi**ans!
+
+Over the next six weeks, I will be focusing intensively on personal matters.&lt;br&gt;
+I kindly ask for your understanding if I'm not as available as usual during this time.
+
+I'm confident that 
+with the Wiki 📑 , 
+the video guide 📹 , 
+and the amazing people ❤ in this community, 
+most questions can be answered and issues resolved.
+
+A huge thank you to everyone who contributes to this project and helps others along the way - it truly makes a difference!
+
+I'm already looking forward to ...</description>
+            <pubDate>Thu, 23 Jan 2025 10:31:33 GMT</pubDate>
+            <category>normal</category>
+            <guid>phil1988/freedi/issue/105</guid>
+        </item>
     </channel>
 </rss>
