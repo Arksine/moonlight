@@ -4,28 +4,29 @@
         <title>phil1988/freedi</title>
         <link>https://github.com/Phil1988/FreeDi</link>
         <description>An open OS + display firmware for QIDI 3D printers</description>
-        <pubDate>Sun, 02 Mar 2025 00:59:52 GMT</pubDate>
+        <pubDate>Tue, 11 Mar 2025 12:59:32 GMT</pubDate>
         <moonlight:configHash>7c64bfb0d231ecc800cd2ad0d7efd76725951c7011969e82f3b8aa011279c1fa</moonlight:configHash>
         <item>
-            <title>FreeDi v1.41 released</title>
-            <link>https://github.com/Phil1988/FreeDi/issues/174</link>
-            <description>### v1.41 has just been released!
+            <title>FreeDi v1.42 released</title>
+            <link>https://github.com/Phil1988/FreeDi/issues/187</link>
+            <description>### v1.42 has just been released!
 
-This is a rather small update to wipe out some minor bugs and add a few tiny features.
+This update integrates the new project structure on GitHub.
+Hopefully this will completely enable seamless **Moonraker Updates** for better maintainability. 
 
-## Instructions to Update:
+### Update instructions:
+Please do:
+```
+cd ~ &amp;&amp; rm -rf FreeDi &amp;&amp; git clone https://github.com/Phil1988/FreeDi ~/FreeDi &amp;&amp; cd ~/FreeDi &amp;&amp; ./install.sh
+```
 
-**Click update** 😉
-![image](https://github.com/user-attachments/assets/27305af0-a96d-40be-bd38-ebc48e2d19b1)
+This will bring you to v1.42
+![Image](https://github.com/user-attachments/assets/c89bd788-c812-4d5a-809a-2ccb2e5bc331)
 
-### For the 3 macros ( PRINT_END, CANCEL_PRINT and M107):
-Go to the [config_section](https://github.com/Phil1988/FreeDi/tree/master/config_section) and get the matching macro for your printer (copy the macro and replace yours)
-
-
-### Changelog and m...</description>
-            <pubDate>Sat, 01 Mar 2025 23:45:24 GMT</pubDate>
+The next release will show if the update...</description>
+            <pubDate>Tue, 11 Mar 2025 12:39:41 GMT</pubDate>
             <category>normal</category>
-            <guid>phil1988/freedi/issue/174</guid>
+            <guid>phil1988/freedi/issue/187</guid>
         </item>
     </channel>
 </rss>
