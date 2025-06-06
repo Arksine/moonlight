@@ -4,15 +4,7 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Thu, 19 Dec 2024 00:58:09 GMT</pubDate>
+        <pubDate>Fri, 06 Jun 2025 15:11:25 GMT</pubDate>
         <moonlight:configHash>a5bd053c6f89cbbcfde0a3590957b27f40213e78a483e7249b99317958155b04</moonlight:configHash>
-        <item>
-            <title>PSA: the next v2.1.0 RatOS-configurator update contains a few relatively big filesystem changes.</title>
-            <link>https://github.com/Rat-OS/RatOS/issues/169</link>
-            <description>If you have something important to print over the holidays, i would advise not to update yet. We feel confident that there are no major hurdles in this one, but since it does merge the configuration and configurator to a single repository and migrates several variables to the system environment, it's not risk free if you've made changes to your RatOS installation. This update also contains the new gcode post processor which isn't memory bound, meaning it'll process any file size you throw at it.</description>
-            <pubDate>Thu, 19 Dec 2024 00:08:34 GMT</pubDate>
-            <category>normal</category>
-            <guid>rat-os/ratos/issue/169</guid>
-        </item>
     </channel>
 </rss>
