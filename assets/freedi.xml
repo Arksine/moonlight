@@ -4,22 +4,8 @@
         <title>phil1988/freedi</title>
         <link>https://github.com/Phil1988/FreeDi</link>
         <description>An open OS + display firmware for QIDI 3D printers</description>
-        <pubDate>Sat, 31 May 2025 20:37:15 GMT</pubDate>
+        <pubDate>Wed, 18 Jun 2025 13:49:02 GMT</pubDate>
         <moonlight:configHash>7c64bfb0d231ecc800cd2ad0d7efd76725951c7011969e82f3b8aa011279c1fa</moonlight:configHash>
-        <item>
-            <title>Open Beta Release of FreeDi v2.00</title>
-            <link>https://github.com/Phil1988/FreeDi/issues/243</link>
-            <description># Hey everybody!
-
-I’m super excited to let you know that I’ll be releasing FreeDi v2.00 as an open beta! 🎉 
-The main reason for this is to gather more feedback from all of you and to speed things up.
-
-I’ve been facing a bit of a challenge with developing for printers that I don’t own. 
-Right now, I’m relying 100% on a few alpha users who, unfortunately, can’t test it out due to time issues and some hardware hiccups (like broken EMMC card readers , "in the middle of doing a hardware upgrade" - the normal ...</description>
-            <pubDate>Sat, 31 May 2025 20:06:21 GMT</pubDate>
-            <category>normal</category>
-            <guid>phil1988/freedi/issue/243</guid>
-        </item>
         <item>
             <title>FreeDi v1.42 released</title>
             <link>https://github.com/Phil1988/FreeDi/issues/187</link>
