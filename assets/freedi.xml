@@ -4,8 +4,25 @@
         <title>phil1988/freedi</title>
         <link>https://github.com/Phil1988/FreeDi</link>
         <description>An open OS + display firmware for QIDI 3D printers</description>
-        <pubDate>Wed, 18 Jun 2025 13:49:02 GMT</pubDate>
+        <pubDate>Mon, 23 Jun 2025 12:27:53 GMT</pubDate>
         <moonlight:configHash>7c64bfb0d231ecc800cd2ad0d7efd76725951c7011969e82f3b8aa011279c1fa</moonlight:configHash>
+        <item>
+            <title>FreeDi v2.00</title>
+            <link>https://github.com/Phil1988/FreeDi/issues/253</link>
+            <description>## ⚠️ Heads-up: Upgrading FreeDi from **v1.x ➜ v2.00**
+  
+A quick notice before the v2.00 release drops later today:
+
+### Why this notice?
+Moving from the 1.x line to **v2.00** brings a completely new software base (Armbian 25, Klipper 0.13, fresh screen firmwares, reworked configs, the Wizard, and much more …).  
+Although I’ve run several upgrade tests successfully, I **cannot guarantee** a flawless transition on every device.
+This major release can cause problems on a normal update.
+
+### 🔒 Please back ...</description>
+            <pubDate>Mon, 23 Jun 2025 11:56:32 GMT</pubDate>
+            <category>normal</category>
+            <guid>phil1988/freedi/issue/253</guid>
+        </item>
         <item>
             <title>FreeDi v1.42 released</title>
             <link>https://github.com/Phil1988/FreeDi/issues/187</link>
