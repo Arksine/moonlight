@@ -4,8 +4,26 @@
         <title>phil1988/freedi</title>
         <link>https://github.com/Phil1988/FreeDi</link>
         <description>An open OS + display firmware for QIDI 3D printers</description>
-        <pubDate>Mon, 23 Jun 2025 13:08:51 GMT</pubDate>
+        <pubDate>Thu, 10 Jul 2025 10:44:45 GMT</pubDate>
         <moonlight:configHash>7c64bfb0d231ecc800cd2ad0d7efd76725951c7011969e82f3b8aa011279c1fa</moonlight:configHash>
+        <item>
+            <title>[Announcement] Out of Office for the Next 3 Weeks</title>
+            <link>https://github.com/Phil1988/FreeDi/issues/283</link>
+            <description>Hello everyone,
+
+I will be unavailable for the next three weeks.  
+During my absence, please refer to:
+
+- the [FAQ  ](https://github.com/Phil1988/FreeDi/wiki/FAQ)
+- the open issues and the wiki in this repository  
+- the discussion in our [Discord channel  ](https://github.com/Phil1988/FreeDi/wiki/Community)
+
+I hope you can resolve any questions using these resources.  
+Thank you for your understanding! 😊</description>
+            <pubDate>Thu, 10 Jul 2025 10:30:49 GMT</pubDate>
+            <category>normal</category>
+            <guid>phil1988/freedi/issue/283</guid>
+        </item>
         <item>
             <title>FreeDi v2.00</title>
             <link>https://github.com/Phil1988/FreeDi/issues/253</link>
