@@ -4,8 +4,25 @@
         <title>phil1988/freedi</title>
         <link>https://github.com/Phil1988/FreeDi</link>
         <description>An open OS + display firmware for QIDI 3D printers</description>
-        <pubDate>Thu, 10 Jul 2025 10:44:45 GMT</pubDate>
+        <pubDate>Wed, 16 Jul 2025 10:46:10 GMT</pubDate>
         <moonlight:configHash>7c64bfb0d231ecc800cd2ad0d7efd76725951c7011969e82f3b8aa011279c1fa</moonlight:configHash>
+        <item>
+            <title>[Announcement] Warning about a fundamental issue on FreeDi</title>
+            <link>https://github.com/Phil1988/FreeDi/issues/290</link>
+            <description>Hello everyone!
+
+There are currently a few reports about affected X3 series owners with freezing systems mid print.
+(See here https://github.com/Phil1988/FreeDi/issues/288).
+
+I didnt had that problem on my tests before releasing v2.00 on my X-Max3 - but there definetly is "something" not working for some users.
+Unfortunately I am gone for a while (see https://github.com/Phil1988/FreeDi/issues/283) and I cant track this down.
+
+For now, I can only give all of you a warning:
+**Do not update or install FreeD...</description>
+            <pubDate>Wed, 16 Jul 2025 10:31:16 GMT</pubDate>
+            <category>normal</category>
+            <guid>phil1988/freedi/issue/290</guid>
+        </item>
         <item>
             <title>[Announcement] Out of Office for the Next 3 Weeks</title>
             <link>https://github.com/Phil1988/FreeDi/issues/283</link>
