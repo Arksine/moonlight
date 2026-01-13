@@ -39,7 +39,7 @@
         "repo_owner": "Rat-OS",
         "repo_name": "RatOS",
         "description": "An OS focusing on making klipper more approachable",
-        "authorized_creators": ["miklschmidt"]
+        "authorized_creators": ["miklschmidt", "tg73"]
     },
     "octoeverywhere": {
         "repo_owner": "QuinnDamerell",
