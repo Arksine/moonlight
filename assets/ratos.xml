@@ -4,18 +4,17 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Mon, 02 Feb 2026 18:02:07 GMT</pubDate>
+        <pubDate>Mon, 02 Feb 2026 23:20:38 GMT</pubDate>
         <moonlight:configHash>19462f2ef23f7590b549d65f69285e27e5ba883c9060c0d726c9f80be6ab6e10</moonlight:configHash>
         <item>
             <title>RatOS 2.1.0-RC4 released!</title>
             <link>https://github.com/Rat-OS/RatOS/issues/214</link>
             <description>- Major improvements to beacon workflow and first layer accuracy and reliability.
-- Plus support for the new [Rat Rig V-Core 4.1](https://ratrig.com/collections/v-core-4) printer and upgrades.
-
-A fresh installation is required - existing 2.1.0-RC3 installations will not be updated automatically.
-
-See the ⁨release notes⁩ for more information:
-https://github.com/Rat-OS/RatOS/releases/tag/v2.1.0-RC4</description>
+- Plus support for the new Rat Rig V-Core 4. printer and upgrades.
+- A fresh installation is required - existing 2.1.0-RC3 installations will not be updated automatically.
+- See the ⁨release notes⁩ for more information:
+- https://github.com/Rat-OS/RatOS/releases/tag/v2.1.0-RC4 
+- https://ratrig.com/collections/v-core-4</description>
             <pubDate>Mon, 02 Feb 2026 17:30:55 GMT</pubDate>
             <category>normal</category>
             <guid>rat-os/ratos/issue/214</guid>
