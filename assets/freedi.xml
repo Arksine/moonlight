@@ -4,7 +4,27 @@
         <title>phil1988/freedi</title>
         <link>https://github.com/Phil1988/FreeDi</link>
         <description>An open OS + display firmware for QIDI 3D printers</description>
-        <pubDate>Sun, 09 Nov 2025 11:09:10 GMT</pubDate>
+        <pubDate>Wed, 04 Feb 2026 12:41:12 GMT</pubDate>
         <moonlight:configHash>7c64bfb0d231ecc800cd2ad0d7efd76725951c7011969e82f3b8aa011279c1fa</moonlight:configHash>
+        <item>
+            <title>[Announcement] Introducing the FreeDi Discord Server</title>
+            <link>https://github.com/Phil1988/FreeDi/issues/467</link>
+            <description>## 🎉 We now have an official FreeDi Discord server!
+
+Hey everyone 👋  
+
+We’re happy to announce that **FreeDi now has its own dedicated Discord server**!  
+The goal is to make communication, support, and collaboration much easier for everyone.
+
+In the past, we were using a single channel on another server, and over time it became clear that:
+- conversations were hard to organize  
+- different topics got mixed up  
+- important questions and answers were easy to miss  
+
+So we decided it was time for a fresh...</description>
+            <pubDate>Wed, 04 Feb 2026 12:34:30 GMT</pubDate>
+            <category>normal</category>
+            <guid>phil1988/freedi/issue/467</guid>
+        </item>
     </channel>
 </rss>
