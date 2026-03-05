@@ -4,7 +4,15 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Thu, 05 Mar 2026 08:46:22 GMT</pubDate>
+        <pubDate>Thu, 05 Mar 2026 17:55:47 GMT</pubDate>
         <moonlight:configHash>19462f2ef23f7590b549d65f69285e27e5ba883c9060c0d726c9f80be6ab6e10</moonlight:configHash>
+        <item>
+            <title>RatOS 2.1.0 has been released!</title>
+            <link>https://github.com/Rat-OS/RatOS/issues/220</link>
+            <description>This release marks the completion of RatOS version 2.1.0. Release notes and upgrade instructions here: https://github.com/Rat-OS/RatOS/releases/tag/v2.1.0</description>
+            <pubDate>Thu, 05 Mar 2026 16:23:25 GMT</pubDate>
+            <category>normal</category>
+            <guid>rat-os/ratos/issue/220</guid>
+        </item>
     </channel>
 </rss>
