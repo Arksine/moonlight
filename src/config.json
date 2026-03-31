@@ -58,5 +58,11 @@
         "repo_name": "FreeDi",
         "description": "An open OS + display firmware for QIDI 3D printers",
         "authorized_creators": ["Phil1988"]
+    },
+    "re3D-OS": {
+        "repo_owner": "re3Dprinting",
+        "repo_name": "re3D-Klipper-OS",
+        "description": "An OS that includes Klipper firmware and additional dependencies needed to operate the re:3D Gigabot printers.",
+        "authorized_creators": ["re3Dev", "re3Dprinting"]
     }
 }
