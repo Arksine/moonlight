@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:moonlight="https://arksine.github.io/moonlight">
+    <channel>
+        <title>re3dprinting/re3d-klipper-os</title>
+        <link>https://github.com/re3Dprinting/re3D-Klipper-OS</link>
+        <description>An OS that includes Klipper firmware and additional dependencies needed to operate the re:3D Gigabot printers.</description>
+        <pubDate>Tue, 31 Mar 2026 23:33:00 GMT</pubDate>
+        <moonlight:configHash>ff3b9473c837276bfcdbd1f01c51d9d81ac8ff7653d3497287a9d2fd7aa52ae4</moonlight:configHash>
+    </channel>
+</rss>
