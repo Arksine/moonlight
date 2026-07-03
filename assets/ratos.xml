@@ -4,7 +4,15 @@
         <title>rat-os/ratos</title>
         <link>https://github.com/Rat-OS/RatOS</link>
         <description>An OS focusing on making klipper more approachable</description>
-        <pubDate>Thu, 25 Jun 2026 16:17:14 GMT</pubDate>
+        <pubDate>Fri, 03 Jul 2026 16:19:41 GMT</pubDate>
         <moonlight:configHash>19462f2ef23f7590b549d65f69285e27e5ba883c9060c0d726c9f80be6ab6e10</moonlight:configHash>
+        <item>
+            <title>Attention Octopus Pro H723 V1.1 and EBB42 Gen 2 Users!</title>
+            <link>https://github.com/Rat-OS/RatOS/issues/234</link>
+            <description>RatOS minor update v2.1.1 will be released soon, which includes some hardware pin configuration changes that may affect some machines. Machines built using stock RatRig V-Core 4.0 and 4.1 electronics are not affected. For details, read the blog post here: https://os.ratrig.com/blog/breaking-changes-in-v2-1-1</description>
+            <pubDate>Fri, 03 Jul 2026 14:46:58 GMT</pubDate>
+            <category>high</category>
+            <guid>rat-os/ratos/issue/234</guid>
+        </item>
     </channel>
 </rss>
