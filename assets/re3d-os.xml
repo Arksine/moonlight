@@ -4,15 +4,7 @@
         <title>re3dprinting/re3d-klipper-os</title>
         <link>https://github.com/re3Dprinting/re3D-Klipper-OS</link>
         <description>An OS that includes Klipper firmware and additional dependencies needed to operate the re:3D Gigabot printers.</description>
-        <pubDate>Thu, 18 Jun 2026 20:13:26 GMT</pubDate>
+        <pubDate>Mon, 10 Aug 2026 22:04:48 GMT</pubDate>
         <moonlight:configHash>ff3b9473c837276bfcdbd1f01c51d9d81ac8ff7653d3497287a9d2fd7aa52ae4</moonlight:configHash>
-        <item>
-            <title>re:3D Klipper OS v1.4.1 Update</title>
-            <link>https://github.com/re3Dprinting/re3D-Klipper-OS/issues/14</link>
-            <description>re:3D Klipper OS v1.4.1 is now available! To learn more and upgrade your system, visit: https://github.com/re3Dprinting/re3D-Klipper-OS/releases</description>
-            <pubDate>Thu, 18 Jun 2026 19:17:04 GMT</pubDate>
-            <category>normal</category>
-            <guid>re3dprinting/re3d-klipper-os/issue/14</guid>
-        </item>
     </channel>
 </rss>
