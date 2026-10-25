@@ -27,7 +27,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FORCE_UPDATE: ${{ github.event.inputs.force-update }}
         run: |
-          pip install httpx[http2]
+          pip install httpx2[http2]
           OUTPUT=$(python ./src/update_rss.py)
           echo "result=$OUTPUT" >> $GITHUB_OUTPUT
 

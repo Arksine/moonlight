@@ -14,7 +14,7 @@ import argparse
 import email.utils
 import sys
 import logging
-import httpx
+import httpx2
 import xml.etree.ElementTree as etree
 from typing import List, Dict, Any, Optional
 
@@ -101,6 +101,8 @@ class RssDocument:
             guid = f"{self.repo}/issue/{issue['number']}".lower()
             RssElement(item, "guid", guid, level=3, is_last=True)
         last = list(self.channel)[-1]
+        if last.tail is None:
+            last.tail = ""
         last.tail = last.tail[:-4]
 
     def equals(self, feed_info: Dict[str, Any]) -> bool:
@@ -135,7 +137,7 @@ class RssDocument:
         path = ASSETS_PATH.joinpath(f"{self.name.lower()}.xml")
         tree.write(path, encoding="utf-8", xml_declaration=True)
 
-def hash_config(name: str, options: Dict[str, Any]) -> None:
+def hash_config(name: str, options: Dict[str, Any]) -> str:
     hash = hashlib.sha256()
     hash.update(name.encode())
     sorted_opts: Dict[str, Any]
@@ -165,7 +167,7 @@ def get_feed_info(name: str) -> Dict[str, Any]:
                 pass
     return ret
 
-def get_rate_limit(headers: httpx.Headers) -> Dict[str, Any]:
+def get_rate_limit(headers: httpx2.Headers) -> Dict[str, Any]:
     if 'X-Ratelimit-Limit' in headers:
         reset_time = float(headers['X-Ratelimit-Reset'])
         dt = datetime.datetime.fromtimestamp(reset_time)
@@ -227,13 +229,17 @@ def main(token: Optional[str] = None, enable_cache=False) -> None:
         etag = repo_cache.get("etag")
         if etag is not None:
             headers["If-None-Match"] = etag
-        with httpx.Client(http2=True) as client:
-            resp = client.get(url, headers=headers, timeout=2.0)
+        with httpx2.Client(http2=True) as client:
+            try:
+                resp = client.get(url, headers=headers, timeout=2.0)
+            except Exception:
+                logging.info(f"Error fetching {name}")
+                continue
         rate_limit.update(get_rate_limit(resp.headers))
         if resp.status_code == 304:
             logging.info(f"Not modified: {name}")
             continue
-        elif resp.status_code != httpx.codes.OK:
+        elif resp.status_code != httpx2.codes.OK:
             logging.info(f"Error fetching {name}")
             continue
         if "etag" in resp.headers:
