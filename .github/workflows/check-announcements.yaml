@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Moonlight
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Get Python
-        uses: actions/setup-python@v4
-        with: {python-version: '3.9'}
+        uses: actions/setup-python@v7
+        with: {python-version: '3.12'}
 
       - name: Parse Issues
         id: parse
